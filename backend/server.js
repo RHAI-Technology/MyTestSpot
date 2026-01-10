@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.send('Exam Portal Backend is Running...');
 });
 
-// Test Database Route
+// Test Database Routes
 app.get('/api/test-db', async (req, res) => {
   try {
     const result = await pool.query('SELECT current_database(), NOW()');
